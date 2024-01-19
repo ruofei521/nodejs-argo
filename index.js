@@ -1,12 +1,12 @@
 const FILE_PATH = process.env.FILE_PATH || './temp'; // 运行文件夹，节点文件存放目录
-const projectPageURL = process.env.URL || 'https://backapp-ruofei5211.b4a.run';        // 填写项目域名可开启自动访问保活，非标端口的前缀是http://
+const projectPageURL = process.env.URL || '';        // 填写项目域名可开启自动访问保活，非标端口的前缀是http://
 const intervalInseconds = process.env.TIME || 120;   // 自动访问间隔时间（120秒）
 const UUID = process.env.UUID || '89c13786-25aa-4520-b2e7-12cd60fb5202';
-const NEZHA_SERVER = process.env.NEZHA_SERVER || 'tz.123650.xyz';  // 哪吒3个变量不全不运行
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';  // 哪吒3个变量不全不运行
 const NEZHA_PORT = process.env.NEZHA_PORT || '5555';           // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
-const NEZHA_KEY = process.env.NEZHA_KEY || '9ljGvHrE74qidTLihw';                 // 哪吒客户端密钥
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'gaming.ins.now.cc';             // 固定隧道域名，留空即启用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiMGZhNWY3NWUyYzQxNTA4NDY1OGZjYTAzMzNkY2FiNDUiLCJ0IjoiMzNjNzZmMGUtYjBjNC00ZDlkLTg5ZTktMjA0NTVkMTllMGNkIiwicyI6Ill6Vm1PREUwTW1ZdFpXSmhNUzAwTWpJMExXSTFORFV0TVdFd01tRmtPR1ppTUdVMiJ9';                 // 固定隧道json或token，留空即启用临时隧道
+const NEZHA_KEY = process.env.NEZHA_KEY || '';                 // 哪吒客户端密钥
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';             // 固定隧道域名，留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || '';                 // 固定隧道json或token，留空即启用临时隧道
 const CFIP = process.env.CFIP || 'www.speedtest.net';              // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                      // 节点端口
 const NAME = process.env.NAME || 'Vls';                        // 节点名称
